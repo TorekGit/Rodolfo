@@ -1,0 +1,7 @@
+browser-sync start -s --directory --files "**/*"
+
+git add --all
+
+git commit -m "Treballant"
+
+git push --all
