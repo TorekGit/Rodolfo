@@ -1792,19 +1792,51 @@ article img.pull-right, article .align-right{
 	margin-top:40px;
 }
 
-
 /* =============================
 21. Media queries 
 ============================= */
 
-@media (min-width: 768px) and (max-width: 979px) {
+/********** Large devices only **********/
+@media (min-width: 1200px) {  
+  .container .jumbotron {
+    background: url('../img/pexels-photo-lg.jpg') no-repeat;
+    height: 548px;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {   
+  .container .jumbotron {
+    background: url('../img/pexels-photo-md.jpg') no-repeat;
+    height: 453px;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+
+	#otras, #colab {
+		margin-top: 20px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {  
+  .container .jumbotron {
+    background: url('../img/pexels-photo-sm.jpg') no-repeat;
+    height: 350px;
+    padding: 0;
+    margin-bottom: 0px;
+  }
 
 	a.detail{
 		background:none;
 		width:100%;
 	}
 
-
+	#otras, #colab {
+		margin-top: 20px;
+	}
 	
 	footer .widget form  input#appendedInputButton {
 		  display: block;
@@ -1831,7 +1863,15 @@ article img.pull-right, article .align-right{
 	}	
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
+  .container .jumbotron {
+    padding: 0;
+    margin-bottom: 0px;
+  }
+
+  .jumbotron img {
+  	border-radius: 6px;
+  }
 
   body {
     padding-right: 0;
@@ -1961,6 +2001,9 @@ article img.pull-right, article .align-right{
 		margin-top:20px;
 	}
 
+	.navbar-brand {
+	    font-size: 18px;
+	}
 
 	.search{
 		float:left;
@@ -1985,6 +2028,7 @@ article img.pull-right, article .align-right{
 
 }
 
+/*
 @media (max-width: 360px) {
 
-}
+}*/
